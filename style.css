@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #f0f0f0;
+}
+/*-- nav start */
+
+.nav{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  background: #be3144;
+  top: 0;
+  left: 0;
+  height: 12%;
+}
+.nav-list{
+  display: flex;
+  gap: 15px;
+  margin-right: 2rem;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list li a{
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 1.1rem;
+  color: #f0f0f0;
+  
+}
+.nav-list li a:hover{
+  background-color: #45567d;
+}
+/* nav end*/
+/* part-2 Welcome Section start*/
+.welcome-section{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 100%;
+ height: 100vh;
+ background-color: #000;
+ background-image: linear-gradient(#3a3d40 0%, #181719 100%);
+ 
+}
+.welcome-section h1{
+  font-size: 3rem;
+  font-weight: 400;
+  
+}
+.welcome-section p{
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #be3144;
+}
+/* part-2 Welcome Section end*/
+/* part-3 Project Section start*/
+.projects{
+  margin-bottom: 50px;
+}
+.projects-section{
+  background-color: #45567d;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.projects-section-header{
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid #f0f0f0;
+}
+h2{
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.projects-grid{
+  display: grid;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.project-image{
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+.project-title{
+  font-size: 1rem;
+  padding: 2rem 0.5rem;
+  color: #f0f0f0;
+  background-color: #303841;
+  border-radius: 2px;
+  top: 0;
+  box-shadow: 1px 1px 2px rgm(0 0 0 / 50%);
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: block;
+  width: 100%;
+}
+.code{
+  transition: 0.3s;
+}
+.project:hover .code{
+  color: #ff7f50;
+}
+
+.btn-show-all{
+  background-color: #303841;
+  padding: 15px;
+  border-radius: 5px;
+  color: #f0f0f0;
+  transition: .3s;
+  display: inline-block;
+}
+.btn-show-all:hover{
+  background-color: #be3144;
+}
+/* part-3 Project Section end*/
+/* part-4 Contact section start*/
+
+.contact-section{
+background-color: #303841;
+}
+
+.contact-section-header{
+  text-align: center;
+  padding: 20px;
+}
+.contact-section-header h2{
+  font-size: 3rem;
+}
+.contact-section-header p{
+  font-style: italic;
+}
+/* part-4 Contact section end*/
+/* Footer start */
+.contact-links{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  /* width: 100%;
+  
+  max-width: 980px;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center; */
+}
+.btn{
+  display: inline-block;
+  padding: .8rem 1rem;
+  border-radius: 2px;
+}
+.contact-links a{
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #f0f0f0;
+}
+.contact-details {
+  transition: transform 0.3s;
+}
+.contact-details:hover{
+  transform: translateY(8px);
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+footer{
+  background-color: #303841;
+  display: flex;
+  justify-content: space-evenly;
+  
+  border-top: 3px solid #be3144;
+}
+footer p{
+  margin: 1.4rem;
+}
+footer a{
+  text-decoration: none;
+  color: #f0f0f0;
+}
+/* Footer End */
+/*media query start */
+@media only screen and(max-width: 680px){
+  .welcome-section{
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+.welcome-section h1{
+  font-size: 15px;
+}
+}
+/*media query start */
+
+
+/*
+1. https://i.postimg.cc/65ct9Yvz/tribute.jpg
+2. https://i.postimg.cc/KYMsq87w/Screenshot-3.png
+3. https://i.postimg.cc/yN1knDzY/Nasim-Project.png
+4. https://i.postimg.cc/sX89GtNz/Screenshot-4.png
+5. https://i.postimg.cc/wT5L9ygg/JS-Details.png
+6. https://i.postimg.cc/QdH716cx/my-project.png
+
